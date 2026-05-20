@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>अमर शहीद कुँवर प्रताप सिंह बारठ - जन्म जयंती समारोह 2026</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f9fa;
+            margin: 0;
+            padding: 10px;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #ffffff;
+            border: 3px solid #800000;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header-deities {
+            background: linear-gradient(135deg, #800000, #b30000);
+            color: #fff;
+            text-align: center;
+            padding: 20px 15px;
+            border-bottom: 4px solid #ffcc00;
+        }
+        .top-deity {
+            font-size: 1.3rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: #ffcc00;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px #000;
+        }
+        .line-deities {
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-top: 1px dashed #ffcc00;
+            padding-top: 10px;
+            margin-top: 5px;
+        }
+        .main-title-box {
+            text-align: center;
+            padding: 25px 15px;
+            background-color: #fffdf5;
+        }
+        .main-title {
+            color: #800000;
+            font-size: 1.6rem;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+        }
+        .subtitle {
+            background-color: #ffcc00;
+            color: #800000;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 6px 20px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        .blessing-box {
+            border: 2px double #800000;
+            background: #fff8e7;
+            margin: 15px;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+        }
+        .blessing-title {
+            font-size: 0.9rem;
+            color: #666;
+            text-transform: uppercase;
+        }
+        .blessing-name {
+            font-size: 1.2rem;
+            color: #b30000;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+        .date-badge {
+            background-color: #800000;
+            color: #fff;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 10px;
+            margin: 15px;
+            border-radius: 6px;
+        }
+        .section-title {
+            background: #f0e6d2;
+            color: #800000;
+            padding: 8px 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-left: 5px solid #800000;
+            margin: 20px 15px 10px 15px;
+        }
+        .schedule-item {
+            margin: 0 15px 15px 15px;
+            padding: 12px;
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+        .schedule-time {
+            color: #b30000;
+            font-weight: bold;
+            font-size: 1rem;
+            display: block;
+            margin-bottom: 4px;
+        }
+        .schedule-name {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #111;
+        }
+        .schedule-desc {
+            font-size: 0.95rem;
+            color: #555;
+            margin-top: 2px;
+        }
+        .guests-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin: 0 15px;
+        }
+        .guest-card {
+            background: #fffdf5;
+            border: 1px solid #eedcba;
+            padding: 10px;
+            border-radius: 6px;
+            text-align: center;
+        }
+        .guest-name {
+            font-weight: bold;
+            color: #800000;
+            font-size: 1rem;
+        }
+        .guest-post {
+            font-size: 0.85rem;
+            color: #666;
+        }
+        .venue-box {
+            background: #e6f2ff;
+            border: 1px solid #b3d7ff;
+            color: #004085;
+            margin: 20px 15px;
+            padding: 15px;
+            text-align: center;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+        .footer-org {
+            background: #f5f5f5;
+            padding: 20px 15px;
+            text-align: center;
+            font-size: 0.95rem;
+            border-top: 1px solid #e0e0e0;
+        }
+        .org-main {
+            font-weight: bold;
+            color: #800000;
+            font-size: 1.1rem;
+        }
+        .org-supports {
+            font-size: 0.85rem;
+            color: #555;
+            margin-top: 8px;
+            line-height: 1.4;
+        }
+        .contact-info {
+            background: #800000;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    
+    <div class="header-deities">
+        <div class="top-deity">।। श्री हिंगलाज माताजी प्रसन्न ।।</div>
+        <div class="line-deities">आई श्री खोड़ियार माँ • करणी जी महाराज • देवी माँ त्रयी</div>
+    </div>
+
+    <div class="main-title-box">
+        <h1 class="main-title">अमर शहीद कुँवर प्रताप सिंह बारठ</h1>
+        <div class="subtitle">जन्म जयंती समारोह - 2026</div>
+        <div style="font-size: 1.2rem; font-weight: bold; color: #555;">हार्दिक आमंत्रण</div>
+    </div>
+
+    <div class="blessing-box">
+        <div class="blessing-title">परम पूज्य</div>
+        <div class="blessing-name">आई श्री ज्योत बाई माँ गढ़शीशा</div>
+        <div style="font-size: 0.9rem; color: #444;">के पावन सानिध्य में</div>
+    </div>
+
+    <div class="date-badge">
+        दिनांक: 24 मई 2026, रविवार (ज्येष्ठ शुक्ल नवमी वि.सं. 2083)
+    </div>
+
+    <div class="section-title">:- मुख्य कार्यक्रम -:</div>
+    
+    <div class="schedule-item">
+        <span class="schedule-time">प्रात: 09:30 बजे</span>
+        <span class="schedule-name">पुष्पांजलि व वाहन रैली</span>
+        <div class="schedule-desc">श्री भूपाल चारण छात्रावास से शहीद स्मारक टाउन हॉल तक</div>
+    </div>
+
+    <div class="schedule-item">
+        <span class="schedule-time">दोपहर 02:00 बजे से 04:00 बजे तक</span>
+        <span class="schedule-name">रक्तदान शिविर एवम स्वैच्छिक रक्तदान आयोजन</span>
+    </div>
+
+    <div class="schedule-item">
+        <span class="schedule-time">सायं 06:00 बजे से 08:00 बजे तक</span>
+        <span class="schedule-name">महाप्रसादी (भोजन प्रसादी कार्यक्रम)</span>
+    </div>
+
+    <div class="schedule-item">
+        <span class="schedule-time">सायं 08:00 बजे से 09:30 बजे तक</span>
+        <span class="schedule-name">अतिथि सत्कार एवं पारितोषिक वितरण</span>
+        <div class="schedule-desc">प्रतिभा सम्मान समारोह एवं पुरस्कार वितरण कार्यक्रम</div>
+    </div>
+
+    <div class="schedule-item">
+        <span class="schedule-time">रात्रि 09:30 बजे से</span>
+        <span class="schedule-name">भगवती आराधना संध्या (भागवती स्मरण संध्या)</span>
+    </div>
+
+    <div class="section-title">समारोह की शोभा (अतिथिगण)</div>
+    <div class="guests-grid">
+        <div class="guest-card">
+            <div class="guest-name">श्री शत्रुशाल सिंह सौदा</div>
+            <div class="guest-post">क्रान्तिकारी श्री केसरी सिंह बारहठ के प्रपौत्र (विशिष्ट अतिथि)</div>
+        </div>
+        <div class="guest-card">
+            <div class="guest-name">श्री रविन्द्रसिंह भाटी</div>
+            <div class="guest-post">विधायक एवं समाज सेवी (मुख्य अतिथि)</div>
+        </div>
+        <div class="guest-card">
+            <div class="guest-name">श्री ओमेन्द्र सिंह रतनु</div>
+            <div class="guest-post">इतिहासकार (विशिष्ट अतिथि)</div>
+        </div>
+        <div class="guest-card">
+            <div class="guest-name">श्री नखतदान बारहट</div>
+            <div class="guest-post">समाज सेवी (विशिष्ट अतिथि)</div>
+        </div>
+    </div>
+
+    <div class="venue-box">
+        आयोजन स्थल: श्री भूपाल चारण छात्रावास, मंशार्पण हनुमान मंदिर के पास, सूरजपोल, उदयपुर (राज.)
+    </div>
+
+    <div class="footer-org">
+        <div style="font-size: 0.9rem; color: #666; margin-bottom: 5px;">-: आयोजक एवं निमंत्रक :-</div>
+        <div class="org-main">श्री मेवाड़ चारण महासभा एवं संस्थान, उदयपुर</div>
+        
+        <div class="org-supports">
+            <strong>सहयोगी संस्थान:</strong><br>
+            रॉयल्स संस्थान (उदयपुर) • शहीद प्रतापसिंह बारठ संस्थान (उदयपुर) • श्री करणी सेवा मण्डल (उदयपुर) • बजरंग सेना (उदयपुर) • शिवदल मेवाड़ (उदयपुर)
+        </div>
+        
+        <div style="margin-top: 15px; border-top: 1px dashed #ccc; padding-top: 10px;">
+            <strong>निवेदक:</strong> श्री भैरूसिंह सौदा (अध्यक्ष: श्री मेवाड़ चारण महासभा) एवं समस्त कार्यकारिणी
+        </div>
+    </div>
+
+    <div class="contact-info">
+        संपर्क: 9982241091, 9414149415, 6350230678, 9828842332
+    </div>
+
+</div>
+
+</body>
+</html>
