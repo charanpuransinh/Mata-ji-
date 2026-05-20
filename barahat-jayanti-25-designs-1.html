@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>जन्म जयंती समारोह 2026 — 25 डिज़ाइन थीम्स</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@300;400;600;700;900&family=Cinzel+Decorative:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,400&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{background:#0d0d0d;font-family:'Noto Serif Devanagari',serif;color:#fff;overflow-x:hidden}
+
+/* ── GALLERY HEADER ── */
+.gallery-header{text-align:center;padding:60px 20px 40px;background:linear-gradient(135deg,#1a0a00,#2d1500,#1a0a00);border-bottom:2px solid #C9921A;position:relative;overflow:hidden}
+.gallery-header::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(201,146,26,.15) 0%,transparent 70%)}
+.gallery-header h1{font-family:'Cinzel Decorative',serif;font-size:clamp(18px,4vw,40px);color:#F0C040;letter-spacing:3px;text-shadow:0 0 30px rgba(240,192,64,.5);position:relative}
+.gallery-header p{color:#d4a770;font-size:16px;margin-top:12px;font-family:'Playfair Display',serif;font-style:italic;position:relative}
+.badge-count{display:inline-block;background:#C9921A;color:#000;font-size:13px;font-weight:700;padding:4px 16px;border-radius:20px;margin-top:14px;letter-spacing:2px}
+
+/* ── GRID ── */
+.designs-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:30px;padding:40px;max-width:1800px;margin:0 auto}
+
+/* ── COMMON CARD BASE ── */
+.card{border-radius:12px;overflow:hidden;cursor:pointer;transition:transform .3s,box-shadow .3s;position:relative}
+.card:hover{transform:translateY(-8px) scale(1.01);box-shadow:0 30px 60px rgba(0,0,0,.7)}
+.card-inner{padding:28px 24px;height:100%;position:relative}
+.design-num{position:absolute;top:10px;right:12px;font-size:11px;font-weight:700;opacity:.6;letter-spacing:2px;z-index:10}
+.card h2.event-title{font-size:15px;font-weight:700;line-height:1.5;margin-bottom:6px}
+.card .subtitle{font-size:11px;opacity:.75;margin-bottom:12px;font-style:italic}
+.card .presiding{font-size:12px;margin-bottom:10px;line-height:1.6}
+.card .date-badge{display:inline-block;font-size:13px;font-weight:700;padding:5px 18px;border-radius:30px;margin-bottom:14px}
+.card .program-list{list-style:none;margin-bottom:12px}
+.card .program-list li{font-size:11px;padding:3px 0;border-bottom:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;gap:8px}
+.card .program-list li span:last-child{opacity:.75;white-space:nowrap}
+.card .guests-row{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}
+.card .guest-chip{font-size:10px;padding:3px 10px;border-radius:20px;font-weight:600}
+.card .venue-box{font-size:11px;padding:8px 12px;border-radius:6px;margin-bottom:10px;text-align:center;font-weight:600}
+.card .organizer{font-size:10px;text-align:center;opacity:.8;line-height:1.5}
+.card .contact{font-size:10px;text-align:center;margin-top:6px;font-family:monospace;letter-spacing:1px}
+.card .divider{height:1px;margin:10px 0;opacity:.3}
+.card .orn{text-align:center;font-size:18px;margin:6px 0;opacity:.7}
+.card .section-label{font-size:10px;letter-spacing:2px;text-transform:uppercase;opacity:.6;margin-bottom:4px}
+
+/* ═══════════════════════════════════════════════
+   THEME 1 — Royal Crimson & Gold (Rajputana)
+═══════════════════════════════════════════════ */
+.t1{background:linear-gradient(160deg,#6B0020,#3A0010,#6B0020);border:2px solid #C9921A}
+.t1 .card-inner{background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cpath d='M30 5L55 30L30 55L5 30Z' fill='none' stroke='%23C9921A' stroke-width='.3' opacity='.15'/%3E%3C/svg%3E")}
+.t1 .design-num{color:#C9921A}
+.t1 h2.event-title{color:#F9E8A0}
+.t1 .subtitle{color:#d4a770}
+.t1 .presiding{color:#f0d090;background:rgba(201,146,26,.12);padding:8px 10px;border-left:3px solid #C9921A;border-radius:0 6px 6px 0}
+.t1 .date-badge{background:#C9921A;color:#000}
+.t1 .program-list li{color:#f5e6c0;border-color:rgba(201,146,26,.2)}
+.t1 .guest-chip{background:rgba(201,146,26,.2);color:#F9E8A0;border:1px solid rgba(201,146,26,.4)}
+.t1 .venue-box{background:rgba(0,0,0,.4);color:#F9E8A0;border:1px solid rgba(201,146,26,.5)}
+.t1 .organizer,.t1 .contact{color:#d4a770}
+.t1 .divider{background:#C9921A}
+.t1 .top-border{height:6px;background:linear-gradient(90deg,transparent,#C9921A,#F9E8A0,#C9921A,transparent);margin-bottom:16px}
+
+/* ═══════════════════════════════════════════════
+   THEME 2 — Midnight Navy & Silver
+═══════════════════════════════════════════════ */
+.t2{background:linear-gradient(160deg,#0A1628,#0D2147,#0A1628);border:2px solid #8899CC}
+.t2 .design-num{color:#8899CC}
+.t2 h2.event-title{color:#E8EEFF}
+.t2 .subtitle{color:#8899CC}
+.t2 .presiding{color:#c8d4ff;background:rgba(136,153,204,.1);padding:8px;border:1px solid rgba(136,153,204,.3);border-radius:6px}
+.t2 .date-badge{background:linear-gradient(135deg,#1E3A8A,#3B5BBE);color:#fff;border:1px solid #8899CC}
+.t2 .program-list li{color:#c8d4ff;border-color:rgba(136,153,204,.2)}
+.t2 .guest-chip{background:rgba(136,153,204,.15);color:#E8EEFF;border:1px solid rgba(136,153,204,.3)}
+.t2 .venue-box{background:rgba(0,0,40,.5);color:#E8EEFF;border:1px solid rgba(136,153,204,.4)}
+.t2 .organizer,.t2 .contact{color:#8899CC}
+.t2 .divider{background:linear-gradient(90deg,transparent,#8899CC,transparent)}
+.t2 .star-row{text-align:center;color:#8899CC;font-size:16px;letter-spacing:6px;margin:6px 0}
+
+/* ═══════════════════════════════════════════════
+   THEME 3 — Saffron Sunrise (Festive Rajasthani)
+═══════════════════════════════════════════════ */
+.t3{background:linear-gradient(160deg,#7A2800,#C45000,#7A2800);border:3px solid #FF9A00}
+.t3 .design-num{color:#FF9A00}
+.t3 h2.event-title{color:#FFEFCC;text-shadow:1px 1px 8px rgba(255,154,0,.5)}
+.t3 .subtitle{color:#FFD080}
+.t3 .presiding{color:#FFEFCC;border-bottom:2px dotted #FF9A00;padding-bottom:8px}
+.t3 .date-badge{background:#FF9A00;color:#3A0000;font-weight:900}
+.t3 .program-list li{color:#FFE4B0;border-color:rgba(255,154,0,.25)}
+.t3 .guest-chip{background:rgba(255,154,0,.25);color:#FFEFCC;border:1px solid #FF9A00}
+.t3 .venue-box{background:#3A0000;color:#FFD080;border:2px solid #FF9A00}
+.t3 .organizer,.t3 .contact{color:#FFD080}
+.t3 .divider{background:#FF9A00}
+.t3 .flame{text-align:center;font-size:20px;margin:4px 0;animation:flicker 1.5s infinite alternate}
+@keyframes flicker{0%{opacity:.8}100%{opacity:1}}
+
+/* ═══════════════════════════════════════════════
+   THEME 4 — Emerald Forest & Gold
+═══════════════════════════════════════════════ */
+.t4{background:linear-gradient(160deg,#0A2E14,#0D4A1E,#0A2E14);border:2px solid #4CAF50}
+.t4 .design-num{color:#4CAF50}
+.t4 h2.event-title{color:#E8FFE8}
+.t4 .subtitle{color:#81C784}
+.t4 .presiding{color:#C8F0C8;background:rgba(76,175,80,.12);padding:8px;border-radius:6px;border-left:3px solid #4CAF50}
+.t4 .date-badge{background:#1B5E20;color:#A5D6A7;border:1px solid #4CAF50}
+.t4 .program-list li{color:#C8F0C8;border-color:rgba(76,175,80,.2)}
+.t4 .guest-chip{background:rgba(76,175,80,.15);color:#E8FFE8;border:1px solid rgba(76,175,80,.4)}
+.t4 .venue-box{background:rgba(0,20,0,.5);color:#A5D6A7;border:1px solid rgba(76,175,80,.5)}
+.t4 .organizer,.t4 .contact{color:#81C784}
+.t4 .divider{background:linear-gradient(90deg,transparent,#4CAF50,transparent)}
+
+/* ═══════════════════════════════════════════════
+   THEME 5 — Deep Purple & Rose Gold
+═══════════════════════════════════════════════ */
+.t5{background:linear-gradient(160deg,#1A0033,#2D005A,#1A0033);border:2px solid #E8A0B0}
+.t5 .design-num{color:#E8A0B0}
+.t5 h2.event-title{color:#F5D0E0;font-style:italic}
+.t5 .subtitle{color:#C080A0}
+.t5 .presiding{color:#F0C0D4;background:rgba(232,160,176,.1);padding:8px;border:1px solid rgba(232,160,176,.3);border-radius:6px}
+.t5 .date-badge{background:linear-gradient(135deg,#6A0080,#9C27B0);color:#F5D0E0;border:1px solid #E8A0B0}
+.t5 .program-list li{color:#F0C0D4;border-color:rgba(232,160,176,.2)}
+.t5 .guest-chip{background:rgba(232,160,176,.15);color:#F5D0E0;border:1px solid rgba(232,160,176,.3)}
+.t5 .venue-box{background:rgba(20,0,40,.6);color:#F5D0E0;border:1px solid rgba(232,160,176,.5)}
+.t5 .organizer,.t5 .contact{color:#C080A0}
+.t5 .divider{background:linear-gradient(90deg,transparent,#E8A0B0,transparent)}
+
+/* ═══════════════════════════════════════════════
+   THEME 6 — Black & Gold Metallic (Premium)
+═══════════════════════════════════════════════ */
+.t6{background:#000;border:2px solid #B8860B}
+.t6 .card-inner{background:repeating-linear-gradient(45deg,transparent,transparent 10px,rgba(184,134,11,.03) 10px,rgba(184,134,11,.03) 20px)}
+.t6 .design-num{color:#B8860B}
+.t6 h2.event-title{background:linear-gradient(135deg,#F0C040,#B8860B,#F0C040);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-family:'Cinzel Decorative',serif;font-size:13px}
+.t6 .subtitle{color:#8B6914}
+.t6 .presiding{color:#DEB841;background:rgba(184,134,11,.08);padding:8px;border:1px solid rgba(184,134,11,.3);border-radius:4px}
+.t6 .date-badge{background:linear-gradient(135deg,#B8860B,#F0C040,#B8860B);color:#000;font-weight:900;font-family:monospace;letter-spacing:2px}
+.t6 .program-list li{color:#DEB841;border-color:rgba(184,134,11,.2)}
+.t6 .guest-chip{background:rgba(184,134,11,.1);color:#F0C040;border:1px solid rgba(184,134,11,.4)}
+.t6 .venue-box{background:#0A0A0A;color:#DEB841;border:1px solid #B8860B}
+.t6 .organizer,.t6 .contact{color:#8B6914}
+.t6 .divider{background:linear-gradient(90deg,transparent,#B8860B,#F0C040,#B8860B,transparent)}
+.t6 .top-line,.t6 .bot-line{height:2px;background:linear-gradient(90deg,transparent,#B8860B,#F0C040,#B8860B,transparent)}
+
+/* ═══════════════════════════════════════════════
+   THEME 7 — Peacock Blue & Copper
+═══════════════════════════════════════════════ */
+.t7{background:linear-gradient(160deg,#003344,#00566A,#003344);border:2px solid #B87333}
+.t7 .design-num{color:#B87333}
+.t7 h2.event-title{color:#E0F8FF}
+.t7 .subtitle{color:#80C8D8}
+.t7 .presiding{color:#C0EEF8;background:rgba(184,115,51,.12);padding:8px;border-left:3px solid #B87333;border-radius:0 6px 6px 0}
+.t7 .date-badge{background:#B87333;color:#FFF8F0;font-weight:700}
+.t7 .program-list li{color:#C0EEF8;border-color:rgba(0,150,180,.25)}
+.t7 .guest-chip{background:rgba(0,120,160,.2);color:#E0F8FF;border:1px solid rgba(0,180,220,.4)}
+.t7 .venue-box{background:rgba(0,20,30,.6);color:#80C8D8;border:1px solid rgba(184,115,51,.5)}
+.t7 .organizer,.t7 .contact{color:#80C8D8}
+.t7 .divider{background:linear-gradient(90deg,transparent,#B87333,transparent)}
+.t7 .peacock-orn{text-align:center;font-size:22px;margin:4px 0}
+
+/* ═══════════════════════════════════════════════
+   THEME 8 — Ivory & Burgundy (Classic Light)
+═══════════════════════════════════════════════ */
+.t8{background:linear-gradient(160deg,#FFF5DC,#FFF0D0,#FFF5DC);border:3px solid #800020}
+.t8 .design-num{color:#800020}
+.t8 h2.event-title{color:#4A000E;font-family:'Playfair Display',serif}
+.t8 .subtitle{color:#800020}
+.t8 .presiding{color:#4A000E;background:rgba(128,0,32,.06);padding:8px;border:1px solid rgba(128,0,32,.2);border-radius:6px}
+.t8 .date-badge{background:#800020;color:#FFF5DC;font-weight:700}
+.t8 .program-list li{color:#4A000E;border-color:rgba(128,0,32,.15)}
+.t8 .guest-chip{background:rgba(128,0,32,.08);color:#4A000E;border:1px solid rgba(128,0,32,.3)}
+.t8 .venue-box{background:#FFF0D0;color:#4A000E;border:2px solid #800020}
+.t8 .organizer,.t8 .contact{color:#800020}
+.t8 .divider{background:#800020}
+.t8 .orn{color:#800020}
+
+/* ═══════════════════════════════════════════════
+   THEME 9 — Dark Teal & Gold
+═══════════════════════════════════════════════ */
+.t9{background:linear-gradient(160deg,#003333,#005555,#003333);border:2px solid #DAA520}
+.t9 .design-num{color:#DAA520}
+.t9 h2.event-title{color:#E0FFFF}
+.t9 .subtitle{color:#80C8C8}
+.t9 .presiding{color:#B0E8E8;background:rgba(218,165,32,.1);padding:8px;border-bottom:2px solid rgba(218,165,32,.4)}
+.t9 .date-badge{background:#DAA520;color:#002020;font-weight:700}
+.t9 .program-list li{color:#B0E8E8;border-color:rgba(0,100,100,.3)}
+.t9 .guest-chip{background:rgba(218,165,32,.12);color:#E0FFFF;border:1px solid rgba(218,165,32,.35)}
+.t9 .venue-box{background:rgba(0,20,20,.6);color:#80C8C8;border:1px solid rgba(218,165,32,.5)}
+.t9 .organizer,.t9 .contact{color:#80C8C8}
+.t9 .divider{background:linear-gradient(90deg,transparent,#DAA520,transparent)}
+
+/* ═══════════════════════════════════════════════
+   THEME 10 — Charcoal & Amber (Modern Warm)
+═══════════════════════════════════════════════ */
+.t10{background:linear-gradient(160deg,#1C1C1C,#2D2D2D,#1C1C1C);border:2px solid #FF8C00}
+.t10 .design-num{color:#FF8C00}
+.t10 h2.event-title{color:#FFF0D0}
+.t10 .subtitle{color:#FF8C00}
+.t10 .presiding{color:#FFD080;background:rgba(255,140,0,.1);padding:8px;border-radius:6px;border-left:4px solid #FF8C00}
+.t10 .date-badge{background:#FF8C00;color:#1C1C1C;font-weight:900;font-family:monospace}
+.t10 .program-list li{color:#FFD080;border-color:rgba(255,140,0,.2)}
+.t10 .guest-chip{background:rgba(255,140,0,.12);color:#FFF0D0;border:1px solid rgba(255,140,0,.35)}
+.t10 .venue-box{background:#111;color:#FFF0D0;border:1px solid #FF8C00}
+.t10 .organizer,.t10 .contact{color:#FF8C00}
+.t10 .divider{background:linear-gradient(90deg,transparent,#FF8C00,transparent)}
+
+/* ═══════════════════════════════════════════════
+   THEME 11 — Rose Pink & Dark Maroon (Festive)
+═══════════════════════════════════════════════ */
+.t11{background:linear-gradient(160deg,#5A0020,#8B003A,#5A0020);border:2px solid #FF69B4}
+.t11 .design-num{color:#FF69B4}
+.t11 h2.event-title{color:#FFE4F0}
+.t11 .subtitle{color:#FF8FBF}
+.t11 .presiding{color:#FFD0E8;background:rgba(255,105,180,.1);padding:8px;border:1px dashed rgba(255,105,180,.4);border-radius:6px}
+.t11 .date-badge{background:linear-gradient(135deg,#FF1493,#FF69B4);color:#fff;font-weight:700}
+.t11 .program-list li{color:#FFD0E8;border-color:rgba(255,105,180,.2)}
+.t11 .guest-chip{background:rgba(255,105,180,.15);color:#FFE4F0;border:1px solid rgba(255,105,180,.35)}
+.t11 .venue-box{background:rgba(40,0,20,.6);color:#FFD0E8;border:1px solid rgba(255,105,180,.5)}
+.t11 .organizer,.t11 .contact{color:#FF8FBF}
+.t11 .divider{background:linear-gradient(90deg,transparent,#FF69B4,transparent)}
+
+/* ═══════════════════════════════════════════════
+   THEME 12 — Deep Navy & Cream
+═══════════════════════════════════════════════ */
+.t12{background:linear-gradient(160deg,#0D1B2A,#1B2B3A,#0D1B2A);border:2px solid #FFF5DC}
+.t12 .design-num{color:#FFF5DC}
+.t12 h2.event-title{color:#FFF5DC;font-family:'Cormorant Garamond',serif;font-size:17px;font-style:italic}
+.t12 .subtitle{color:#C8B89A}
+.t12 .presiding{color:#E8DCC8;background:rgba(255,245,220,.06);padding:8px;border-top:1px solid rgba(255,245,220,.2);border-bottom:1px solid rgba(255,245,220,.2)}
+.t12 .date-badge{background:rgba(255,245,220,.15);color:#FFF5DC;border:1px solid rgba(255,245,220,.5)}
+.t12 .program-list li{color:#E8DCC8;border-color:rgba(255,245,220,.1)}
+.t12 .guest-chip{background:rgba(255,245,220,.08);color:#FFF5DC;border:1px solid rgba(255,245,220,.2)}
+.t12 .venue-box{background:rgba(0,10,20,.7);color:#E8DCC8;border:1px solid rgba(255,245,220,.3)}
+.t12 .organizer,.t12 .contact{color:#C8B89A}
+.t12 .divider{background:rgba(255,245,220,.25)}
+
+/* ═══════════════════════════════════════════════
+   THEME 13 — Terracotta & Cream
+═══════════════════════════════════════════════ */
+.t13{background:linear-gradient(160deg,#7A2E1A,#A04030,#7A2E1A);border:3px solid #E8B090}
+.t13 .design-num{color:#E8B090}
+.t13 h2.event-title{color:#FFF0E8}
+.t13 .subtitle{color:#E8B090}
+.t13 .presiding{color:#FFE4D0;background:rgba(232,176,144,.12);padding:8px;border-radius:4px}
+.t13 .date-badge{background:#E8B090;color:#4A0E00;font-weight:700}
+.t13 .program-list li{color:#FFE4D0;border-color:rgba(232,176,144,.2)}
+.t13 .guest-chip{background:rgba(232,176,144,.15);color:#FFF0E8;border:1px solid rgba(232,176,144,.35)}
+.t13 .venue-box{background:rgba(30,10,0,.5);color:#FFE4D0;border:1px solid #E8B090}
+.t13 .organizer,.t13 .contact{color:#E8B090}
+.t13 .divider{background:#E8B090}
+.t13 .pottery-orn{text-align:center;letter-spacing:10px;font-size:16px;color:#E8B090;margin:6px 0}
+
+/* ═══════════════════════════════════════════════
+   THEME 14 — Indigo & Copper (Artisan)
+═══════════════════════════════════════════════ */
+.t14{background:linear-gradient(160deg,#1A1060,#2D1A8A,#1A1060);border:2px solid #B07030}
+.t14 .design-num{color:#B07030}
+.t14 h2.event-title{color:#E8E0FF}
+.t14 .subtitle{color:#9080C0}
+.t14 .presiding{color:#C8C0F0;background:rgba(176,112,48,.1);padding:8px;border-left:3px solid #B07030;border-radius:0 6px 6px 0}
+.t14 .date-badge{background:#B07030;color:#FFF0D0;font-weight:700}
+.t14 .program-list li{color:#C8C0F0;border-color:rgba(176,112,48,.2)}
+.t14 .guest-chip{background:rgba(176,112,48,.12);color:#E8E0FF;border:1px solid rgba(176,112,48,.35)}
+.t14 .venue-box{background:rgba(10,5,40,.6);color:#C8C0F0;border:1px solid rgba(176,112,48,.5)}
+.t14 .organizer,.t14 .contact{color:#9080C0}
+.t14 .divider{background:linear-gradient(90deg,transparent,#B07030,transparent)}
+
+/* ═══════════════════════════════════════════════
+   THEME 15 — Olive Gold (Heritage Warrior)
+═══════════════════════════════════════════════ */
+.t15{background:linear-gradient(160deg,#2A2800,#3D3A00,#2A2800);border:2px solid #C8A000}
+.t15 .design-num{color:#C8A000}
+.t15 h2.event-title{color:#FFFFA0;font-family:'Cinzel Decorative',serif;font-size:12px}
+.t15 .subtitle{color:#A0A040}
+.t15 .presiding{color:#FFFFC0;background:rgba(200,160,0,.1);padding:8px;border:1px solid rgba(200,160,0,.25);border-radius:4px}
+.t15 .date-badge{background:#C8A000;color:#1A1800;font-weight:900}
+.t15 .program-list li{color:#E8E080;border-color:rgba(200,160,0,.2)}
+.t15 .guest-chip{background:rgba(200,160,0,.12);color:#FFFFA0;border:1px solid rgba(200,160,0,.35)}
+.t15 .venue-box{background:rgba(10,10,0,.6);color:#E8E080;border:1px solid rgba(200,160,0,.5)}
+.t15 .organizer,.t15 .contact{color:#A0A040}
+.t15 .divider{background:linear-gradient(90deg,transparent,#C8A000,transparent)}
+
+/* ═══════════════════════════════════════════════
+   THEME 16 — Rich Plum & Silver
+═══════════════════════════════════════════════ */
+.t16{background:linear-gradient(160deg,#2A0040,#450068,#2A0040);border:2px solid #C0C0D8}
+.t16 .design-num{color:#C0C0D8}
+.t16 h2.event-title{color:#F0E8FF;font-family:'Playfair Display',serif;font-style:italic}
+.t16 .subtitle{color:#A090C0}
+.t16 .presiding{color:#E0D0F8;background:rgba(192,192,216,.08);padding:8px;border-top:1px solid rgba(192,192,216,.25);border-bottom:1px solid rgba(192,192,216,.25)}
+.t16 .date-badge{background:linear-gradient(135deg,#808090,#C0C0D8,#808090);color:#1A0030;font-weight:700}
+.t16 .program-list li{color:#E0D0F8;border-color:rgba(192,192,216,.15)}
+.t16 .guest-chip{background:rgba(192,192,216,.1);color:#F0E8FF;border:1px solid rgba(192,192,216,.25)}
+.t16 .venue-box{background:rgba(20,0,40,.7);color:#E0D0F8;border:1px solid rgba(192,192,216,.4)}
+.t16 .organizer,.t16 .contact{color:#A090C0}
+.t16 .divider{background:linear-gradient(90deg,transparent,#C0C0D8,transparent)}
+
+/* ═══════════════════════════════════════════════
+   THEME 17 — Black & Saffron (Bold Warrior)
+═══════════════════════════════════════════════ */
+.t17{background:#000;border:3px solid #FF6600}
+.t17 .design-num{color:#FF6600}
+.t17 h2.event-title{color:#FF6600;font-family:'Cinzel Decorative',serif;font-size:12px;text-shadow:0 0 15px rgba(255,102,0,.6)}
+.t17 .subtitle{color:#CC5500}
+.t17 .presiding{color:#FFB060;background:rgba(255,102,0,.08);padding:8px;border:1px solid rgba(255,102,0,.3);border-radius:4px}
+.t17 .date-badge{background:#FF6600;color:#000;font-weight:900;letter-spacing:2px}
+.t17 .program-list li{color:#FFB060;border-color:rgba(255,102,0,.2)}
+.t17 .guest-chip{background:rgba(255,102,0,.1);color:#FF6600;border:1px solid rgba(255,102,0,.4)}
+.t17 .venue-box{background:#080808;color:#FFB060;border:2px solid #FF6600}
+.t17 .organizer,.t17 .contact{color:#CC5500}
+.t17 .divider{background:linear-gradient(90deg,transparent,#FF6600,transparent)}
+.t17 .top-line{height:3px;background:#FF6600;margin-bottom:14px;box-shadow:0 0 10px #FF6600}
+
+/* ═══════════════════════════════════════════════
+   THEME 18 — Magenta & Navy (Vibrant)
+═══════════════════════════════════════════════ */
+.t18{background:linear-gradient(160deg,#0A0040,#140060,#0A0040);border:2px solid #E020A0}
+.t18 .design-num{color:#E020A0}
+.t18 h2.event-title{color:#FFE0F8}
+.t18 .subtitle{color:#C060A0}
+.t18 .presiding{color:#F0C0E8;background:rgba(224,32,160,.08);padding:8px;border-left:3px solid #E020A0;border-radius:0 6px 6px 0}
+.t18 .date-badge{background:linear-gradient(135deg,#E020A0,#FF40C0);color:#fff;font-weight:700}
+.t18 .program-list li{color:#F0C0E8;border-color:rgba(224,32,160,.2)}
+.t18 .guest-chip{background:rgba(224,32,160,.1);color:#FFE0F8;border:1px solid rgba(224,32,160,.35)}
+.t18 .venue-box{background:rgba(0,0,30,.7);color:#F0C0E8;border:1px solid rgba(224,32,160,.5)}
+.t18 .organizer,.t18 .contact{color:#C060A0}
+.t18 .divider{background:linear-gradient(90deg,transparent,#E020A0,transparent)}
+
+/* ═══════════════════════════════════════════════
+   THEME 19 — Teal & Rose Jewel
+═══════════════════════════════════════════════ */
+.t19{background:linear-gradient(135deg,#003830,#005040,#003830);border:2px solid #FF8096}
+.t19 .design-num{color:#FF8096}
+.t19 h2.event-title{color:#E8FFFC}
+.t19 .subtitle{color:#70C0B0}
+.t19 .presiding{color:#C0F0E8;background:rgba(255,128,150,.08);padding:8px;border-radius:6px;border:1px solid rgba(255,128,150,.25)}
+.t19 .date-badge{background:#FF8096;color:#001A14;font-weight:700}
+.t19 .program-list li{color:#C0F0E8;border-color:rgba(0,150,120,.25)}
+.t19 .guest-chip{background:rgba(255,128,150,.1);color:#E8FFFC;border:1px solid rgba(255,128,150,.3)}
+.t19 .venue-box{background:rgba(0,20,15,.6);color:#C0F0E8;border:1px solid rgba(255,128,150,.5)}
+.t19 .organizer,.t19 .contact{color:#70C0B0}
+.t19 .divider{background:linear-gradient(90deg,transparent,#FF8096,transparent)}
+
+/* ═══════════════════════════════════════════════
+   THEME 20 — Sunset Orange (Warm Drama)
+═══════════════════════════════════════════════ */
+.t20{background:linear-gradient(160deg,#3A1400,#6A2800,#3A1400);border:2px solid #FFB347}
+.t20 .design-num{color:#FFB347}
+.t20 h2.event-title{color:#FFF0D8;font-size:15px}
+.t20 .subtitle{color:#FFB347}
+.t20 .presiding{color:#FFE4B0;background:rgba(255,179,71,.1);padding:8px;border-bottom:2px dotted #FFB347}
+.t20 .date-badge{background:linear-gradient(135deg,#FF6600,#FFB347);color:#1A0800;font-weight:900}
+.t20 .program-list li{color:#FFE4B0;border-color:rgba(255,179,71,.2)}
+.t20 .guest-chip{background:rgba(255,179,71,.12);color:#FFF0D8;border:1px solid rgba(255,179,71,.35)}
+.t20 .venue-box{background:rgba(15,5,0,.6);color:#FFE4B0;border:1px solid #FFB347}
+.t20 .organizer,.t20 .contact{color:#FFB347}
+.t20 .divider{background:linear-gradient(90deg,transparent,#FFB347,transparent)}
+
+/* ═══════════════════════════════════════════════
+   THEME 21 — Mint Green & Gold (Fresh Heritage)
+═══════════════════════════════════════════════ */
+.t21{background:linear-gradient(160deg,#FFF8F0,#FFF4E8,#FFF8F0);border:2px solid #2E8B57;color:#1A3020}
+.t21 .design-num{color:#2E8B57}
+.t21 h2.event-title{color:#1A3020;font-family:'Playfair Display',serif}
+.t21 .subtitle{color:#2E8B57}
+.t21 .presiding{color:#1A3020;background:rgba(46,139,87,.06);padding:8px;border-left:3px solid #DAA520;border-radius:0 6px 6px 0}
+.t21 .date-badge{background:#2E8B57;color:#fff;font-weight:700}
+.t21 .program-list li{color:#2A3828;border-color:rgba(46,139,87,.2)}
+.t21 .guest-chip{background:rgba(46,139,87,.1);color:#1A3020;border:1px solid rgba(46,139,87,.3)}
+.t21 .venue-box{background:#F0FFF0;color:#1A3020;border:2px solid #2E8B57}
+.t21 .organizer,.t21 .contact{color:#2E8B57}
+.t21 .divider{background:#2E8B57}
+
+/* ═══════════════════════════════════════════════
+   THEME 22 — Deep Red & White (Stark Power)
+═══════════════════════════════════════════════ */
+.t22{background:#A00010;border:4px solid #fff}
+.t22 .design-num{color:#fff;background:#6B0008;padding:2px 8px;border-radius:0 0 0 6px}
+.t22 h2.event-title{color:#fff;font-family:'Cinzel Decorative',serif;font-size:12px;letter-spacing:1px}
+.t22 .subtitle{color:rgba(255,255,255,.75)}
+.t22 .presiding{color:#fff;background:rgba(0,0,0,.2);padding:8px;border-radius:4px}
+.t22 .date-badge{background:#fff;color:#A00010;font-weight:900}
+.t22 .program-list li{color:#fff;border-color:rgba(255,255,255,.2)}
+.t22 .guest-chip{background:rgba(0,0,0,.2);color:#fff;border:1px solid rgba(255,255,255,.4)}
+.t22 .venue-box{background:rgba(0,0,0,.25);color:#fff;border:2px solid #fff}
+.t22 .organizer,.t22 .contact{color:rgba(255,255,255,.85)}
+.t22 .divider{background:rgba(255,255,255,.4)}
+
+/* ═══════════════════════════════════════════════
+   THEME 23 — Brown Leather & Cream (Vintage)
+═══════════════════════════════════════════════ */
+.t23{background:linear-gradient(160deg,#3D2008,#5A3010,#3D2008);border:3px double #C4A068}
+.t23 .design-num{color:#C4A068}
+.t23 h2.event-title{color:#F5E8C0;font-family:'Cormorant Garamond',serif;font-size:16px;font-style:italic}
+.t23 .subtitle{color:#C4A068}
+.t23 .presiding{color:#E8D8A0;background:rgba(196,160,104,.1);padding:8px;border:1px dashed rgba(196,160,104,.4);border-radius:4px}
+.t23 .date-badge{background:#C4A068;color:#1A0800;font-weight:700;font-family:'Cormorant Garamond',serif;font-size:14px}
+.t23 .program-list li{color:#E8D8A0;border-color:rgba(196,160,104,.2)}
+.t23 .guest-chip{background:rgba(196,160,104,.12);color:#F5E8C0;border:1px solid rgba(196,160,104,.35)}
+.t23 .venue-box{background:rgba(20,8,0,.5);color:#E8D8A0;border:1px solid #C4A068}
+.t23 .organizer,.t23 .contact{color:#C4A068}
+.t23 .divider{background:linear-gradient(90deg,transparent,#C4A068,transparent)}
+
+/* ═══════════════════════════════════════════════
+   THEME 24 — Electric Blue & White (Modern)
+═══════════════════════════════════════════════ */
+.t24{background:linear-gradient(135deg,#001440,#002880,#001440);border:2px solid #00AAFF}
+.t24 .design-num{color:#00AAFF}
+.t24 h2.event-title{color:#E0F4FF;font-size:14px}
+.t24 .subtitle{color:#60C0FF}
+.t24 .presiding{color:#C0E8FF;background:rgba(0,170,255,.08);padding:8px;border-left:3px solid #00AAFF;border-radius:0 6px 6px 0}
+.t24 .date-badge{background:#00AAFF;color:#001440;font-weight:700;font-family:monospace;letter-spacing:1px}
+.t24 .program-list li{color:#C0E8FF;border-color:rgba(0,170,255,.2)}
+.t24 .guest-chip{background:rgba(0,170,255,.1);color:#E0F4FF;border:1px solid rgba(0,170,255,.35)}
+.t24 .venue-box{background:rgba(0,8,30,.7);color:#C0E8FF;border:1px solid rgba(0,170,255,.5)}
+.t24 .organizer,.t24 .contact{color:#60C0FF}
+.t24 .divider{background:linear-gradient(90deg,transparent,#00AAFF,transparent)}
+.t24 .glow-line{height:1px;background:#00AAFF;box-shadow:0 0 8px #00AAFF;margin:8px 0}
+
+/* ═══════════════════════════════════════════════
+   THEME 25 — Regal Chocolate & Peach (Warm Royal)
+═══════════════════════════════════════════════ */
+.t25{background:linear-gradient(160deg,#2C1308,#402010,#2C1308);border:2px solid #FFAA80}
+.t25 .design-num{color:#FFAA80}
+.t25 h2.event-title{color:#FFF0E8;font-family:'Playfair Display',serif;font-style:italic;font-size:16px}
+.t25 .subtitle{color:#FFAA80}
+.t25 .presiding{color:#FFD8C0;background:rgba(255,170,128,.1);padding:8px;border-radius:6px;border:1px solid rgba(255,170,128,.25)}
+.t25 .date-badge{background:#FFAA80;color:#1A0800;font-weight:700}
+.t25 .program-list li{color:#FFD8C0;border-color:rgba(255,170,128,.2)}
+.t25 .guest-chip{background:rgba(255,170,128,.1);color:#FFF0E8;border:1px solid rgba(255,170,128,.3)}
+.t25 .venue-box{background:rgba(15,5,0,.6);color:#FFD8C0;border:1px solid #FFAA80}
+.t25 .organizer,.t25 .contact{color:#FFAA80}
+.t25 .divider{background:linear-gradient(90deg,transparent,#FFAA80,transparent)}
+
+/* ── MODAL ── */
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:1000;overflow-y:auto;padding:40px 20px}
+.modal-overlay.active{display:flex;align-items:flex-start;justify-content:center}
+.modal-box{max-width:480px;width:100%;border-radius:16px;overflow:hidden;position:relative;margin:auto;animation:modalIn .3s ease}
+@keyframes modalIn{from{opacity:0;transform:scale(.9)}to{opacity:1;transform:scale(1)}}
+.modal-close{position:fixed;top:20px;right:24px;font-size:36px;color:#fff;cursor:pointer;z-index:1001;background:rgba(0,0,0,.6);width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;line-height:1}
+.modal-inner{padding:40px 32px}
+
+/* ── FOOTER ── */
+footer{text-align:center;padding:40px 20px;color:#555;font-size:13px;border-top:1px solid #222;margin-top:20px}
+
+/* ── ANIMATIONS ── */
+.card{animation:fadeUp .5s ease both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.card:nth-child(1){animation-delay:.05s}.card:nth-child(2){animation-delay:.1s}.card:nth-child(3){animation-delay:.15s}
+.card:nth-child(4){animation-delay:.2s}.card:nth-child(5){animation-delay:.25s}.card:nth-child(6){animation-delay:.3s}
+.card:nth-child(7){animation-delay:.35s}.card:nth-child(8){animation-delay:.4s}.card:nth-child(9){animation-delay:.45s}
+.card:nth-child(10){animation-delay:.5s}.card:nth-child(11){animation-delay:.55s}.card:nth-child(12){animation-delay:.6s}
+.card:nth-child(13){animation-delay:.65s}.card:nth-child(14){animation-delay:.7s}.card:nth-child(15){animation-delay:.75s}
+
+/* responsive */
+@media(max-width:600px){.designs-grid{grid-template-columns:1fr;padding:16px}.gallery-header{padding:30px 16px 24px}}
+</style>
+</head>
+<body>
+
+<!-- ══════════════ GALLERY HEADER ══════════════ -->
+<div class="gallery-header">
+  <h1>अमर शहीद कुँवर प्रताप सिंह बारहट<br>जन्म जयंती समारोह 2026</h1>
+  <p>श्री मेवाड़ चारण महासभा एवं संस्थान, उदयपुर द्वारा आयोजित</p>
+  <div class="badge-count">✦ 25 EXCLUSIVE DESIGN THEMES ✦</div>
+  <p style="margin-top:10px;font-size:13px;color:#888">किसी भी डिज़ाइन पर क्लिक करें — Full View देखें</p>
+</div>
+
+<!-- ══════════════ DESIGNS GRID ══════════════ -->
+<div class="designs-grid" id="grid"></div>
+
+<!-- ══════════════ MODAL ══════════════ -->
+<div class="modal-overlay" id="modal">
+  <span class="modal-close" onclick="closeModal()">✕</span>
+  <div class="modal-box" id="modal-box"></div>
+</div>
+
+<footer>
+  ✦ जय मेवाड़ चारण महासभा ✦ &nbsp;|&nbsp; 📞 9982241091 &nbsp;|&nbsp; 6350230678<br>
+  <span style="color:#444">Designed with ❤ — 25 Unique Themes</span>
+</footer>
+
+<script>
+const themes = [
+  {cls:'t1', name:'Royal Crimson & Gold', label:'राजपूताना परम्परागत',
+   topEl:'<div class="top-border"></div>'},
+  {cls:'t2', name:'Midnight Navy & Silver', label:'नीलाकाश रजत',
+   topEl:'<div class="star-row">★ ✦ ★ ✦ ★</div>'},
+  {cls:'t3', name:'Saffron Sunrise', label:'केसरिया सवेरा',
+   topEl:'<div class="flame">🔥 ❖ 🔥</div>'},
+  {cls:'t4', name:'Emerald Forest & Gold', label:'पन्ना वन स्वर्ण',
+   topEl:'<div class="orn">❧ ✿ ❧</div>'},
+  {cls:'t5', name:'Deep Purple & Rose Gold', label:'गुलाब-सोना राजसी',
+   topEl:'<div class="orn" style="color:#E8A0B0">✾ ❋ ✾</div>'},
+  {cls:'t6', name:'Black Gold Metallic', label:'काला-सोना प्रीमियम',
+   topEl:'<div class="top-line"></div>'},
+  {cls:'t7', name:'Peacock Blue & Copper', label:'मोरनील-तांबा',
+   topEl:'<div class="peacock-orn">🦚 ❖ 🦚</div>'},
+  {cls:'t8', name:'Ivory & Burgundy', label:'हाथीदांत-बैंगनी क्लासिक',
+   topEl:'<div class="orn">— ❦ —</div>'},
+  {cls:'t9', name:'Dark Teal & Gold', label:'गहरा नीलहरित-सोना',
+   topEl:'<div class="orn" style="color:#DAA520">✦ ◈ ✦</div>'},
+  {cls:'t10', name:'Charcoal & Amber', label:'आधुनिक कोयला-अम्बर',
+   topEl:'<div class="orn" style="color:#FF8C00">⬥ ⬦ ⬥</div>'},
+  {cls:'t11', name:'Rose Pink & Maroon', label:'गुलाबी-मरून उत्सव',
+   topEl:'<div class="orn" style="color:#FF69B4">✿ ❀ ✿</div>'},
+  {cls:'t12', name:'Deep Navy & Cream', label:'गहरी नौसेना-क्रीम',
+   topEl:'<div class="orn" style="color:rgba(255,245,220,.4)">— ✦ —</div>'},
+  {cls:'t13', name:'Terracotta & Cream', label:'मिट्टी रंग-क्रीम',
+   topEl:'<div class="pottery-orn">◈ ◉ ◈</div>'},
+  {cls:'t14', name:'Indigo & Copper', label:'नीला-तांबा कारीगर',
+   topEl:'<div class="orn" style="color:#B07030">⋆ ✦ ⋆</div>'},
+  {cls:'t15', name:'Olive Gold Heritage', label:'जैतून-सोना विरासत',
+   topEl:'<div class="orn" style="color:#C8A000">⚔ ✦ ⚔</div>'},
+  {cls:'t16', name:'Rich Plum & Silver', label:'बैंगनी-चांदी राजसी',
+   topEl:'<div class="orn" style="color:#C0C0D8">✦ ◈ ✦</div>'},
+  {cls:'t17', name:'Black & Saffron Bold', label:'काला-केसरिया वीर',
+   topEl:'<div class="top-line"></div>'},
+  {cls:'t18', name:'Magenta & Navy', label:'मैजेंटा-नेवी जीवंत',
+   topEl:'<div class="orn" style="color:#E020A0">❋ ✾ ❋</div>'},
+  {cls:'t19', name:'Teal & Rose Jewel', label:'नीलहरित-गुलाब रत्न',
+   topEl:'<div class="orn" style="color:#FF8096">✿ ◈ ✿</div>'},
+  {cls:'t20', name:'Sunset Orange Drama', label:'सूर्यास्त नारंगी',
+   topEl:'<div class="orn" style="color:#FFB347">☀ ◉ ☀</div>'},
+  {cls:'t21', name:'Mint Green & Gold', label:'पुदीना-सोना ताज़ा',
+   topEl:'<div class="orn" style="color:#2E8B57">❧ ✿ ❧</div>'},
+  {cls:'t22', name:'Deep Red & White', label:'गहरा लाल-सफ़ेद',
+   topEl:'<div style="height:3px;background:#fff;margin-bottom:14px"></div>'},
+  {cls:'t23', name:'Brown Leather Vintage', label:'चमड़ा-क्रीम पुरानी शैली',
+   topEl:'<div class="orn" style="color:#C4A068">⁕ ❦ ⁕</div>'},
+  {cls:'t24', name:'Electric Blue Modern', label:'इलेक्ट्रिक नीला आधुनिक',
+   topEl:'<div class="glow-line"></div>'},
+  {cls:'t25', name:'Chocolate & Peach Royal', label:'चॉकलेट-आड़ू राजसी',
+   topEl:'<div class="orn" style="color:#FFAA80">✾ ❋ ✾</div>'},
+];
+
+function buildCard(t, idx, forModal=false) {
+  const scale = forModal ? 'font-size:14px' : '';
+  return `
+  <div class="card-inner" style="${scale}">
+    <div class="design-num">#${String(idx+1).padStart(2,'0')} ${t.name}</div>
+    ${t.topEl}
+
+    <div class="section-label">— शहीद श्रद्धांजलि —</div>
+    <h2 class="event-title">अमर शहीद कुँवर प्रताप सिंह बारहट</h2>
+    <div class="subtitle">जन्म जयंती समारोह 2026 &nbsp;|&nbsp; ${t.label}</div>
+
+    <div class="divider"></div>
+
+    <div class="presiding">
+      <div class="section-label" style="margin-bottom:3px">— पावन सानिध्य —</div>
+      परम पूज्य आई श्री ज्योत बाई मॉं गढ़शीशा
+    </div>
+
+    <div style="margin-top:10px;text-align:center">
+      <span class="date-badge">📅 रविवार, 24 मई 2026</span>
+    </div>
+
+    <div class="divider" style="margin-top:12px"></div>
+
+    <div class="section-label">— कार्यक्रम —</div>
+    <ul class="program-list">
+      <li><span>🌸 पुष्पांजलि व वाहन रेली</span><span>प्रातः 9:30</span></li>
+      <li><span>🩸 रक्तदान शिविर</span><span>2:00 – 4:00</span></li>
+      <li><span>🍽 महाप्रसादी</span><span>सायं 6:00 – 8:00</span></li>
+      <li><span>🏆 पुरस्कार वितरण</span><span>8:00 – 9:30</span></li>
+      <li><span>🙏 भगवती आराधना संध्या</span><span>रात्रि 9:30</span></li>
+    </ul>
+
+    <div class="divider"></div>
+
+    <div class="section-label">— समारोह की शोभा —</div>
+    <div class="guests-row">
+      <span class="guest-chip">मुख्य अतिथि: श्री रविन्द्र सिंह भाटी (विधायक)</span>
+      <span class="guest-chip">श्री शत्रुशाल सिंह सौदा</span>
+      <span class="guest-chip">श्री ओमेन्द्र सिंह रतनु (इतिहासकार)</span>
+      <span class="guest-chip">श्री नखतदान बारहट (समाज सेवी)</span>
+    </div>
+
+    <div class="venue-box">
+      📍 श्री भूपाल चारण छात्रावास, सूरजपोल, उदयपुर
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="organizer">
+      निवेदक: <strong>श्री भैरू सिंह सौदा</strong> (अध्यक्ष)<br>
+      श्री मेवाड़ चारण महासभा एवं संस्थान, उदयपुर
+    </div>
+    <div class="contact">📞 9982241091 &nbsp;|&nbsp; 6350230678</div>
+
+    ${t.topEl.includes('top-border') ? '<div class="top-border" style="margin-top:14px;margin-bottom:0"></div>' : ''}
+  </div>`;
+}
+
+const grid = document.getElementById('grid');
+themes.forEach((t, i) => {
+  const card = document.createElement('div');
+  card.className = `card ${t.cls}`;
+  card.style.animationDelay = (i * 0.06) + 's';
+  card.innerHTML = buildCard(t, i);
+  card.onclick = () => openModal(t, i);
+  grid.appendChild(card);
+});
+
+function openModal(t, i) {
+  const box = document.getElementById('modal-box');
+  box.className = `modal-box ${t.cls}`;
+  box.innerHTML = `<div class="modal-inner">${buildCard(t, i, true)}</div>`;
+  document.getElementById('modal').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal() {
+  document.getElementById('modal').classList.remove('active');
+  document.body.style.overflow = '';
+}
+document.getElementById('modal').addEventListener('click', function(e) {
+  if(e.target === this) closeModal();
+});
+</script>
+</body>
+</html>
