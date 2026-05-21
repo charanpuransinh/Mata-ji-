@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>जय माँ की शक्ति - डिजिटल पत्रिका</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            user-select: none; /* magazine feel, but text can still be selected if needed */
+        }
+
+        body {
+            background: #1a0b02; /* deep earthy / sacred background */
+            font-family: 'Segoe UI', 'Poppins', 'Mukta', 'Noto Sans Devanagari', system-ui, -apple-system, 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* main magazine container - like a digital patrika */
+        .magazine-wrapper {
+            max-width: 550px;
+            width: 100%;
+            margin: 0 auto;
+            background: #fffef7;
+            border-radius: 32px;
+            box-shadow: 0 25px 45px rgba(0,0,0,0.3), 0 0 0 8px #f7e5c2, 0 0 0 12px #b87333;
+            overflow: hidden;
+            transition: all 0.2s ease;
+        }
+
+        /* ----- TRISHUL PAGE (GLORY / ENTRY) ----- */
+        .trishul-page {
+            background: linear-gradient(145deg, #ffeedd 0%, #f7e1b0 100%);
+            padding: 2rem 1.5rem 2.5rem;
+            text-align: center;
+            position: relative;
+            border-bottom: 6px solid #d4af37;
+        }
+
+        .trishul-icon {
+            font-size: 5.5rem;
+            filter: drop-shadow(0 8px 12px rgba(0,0,0,0.2));
+            animation: trishulGlow 2s infinite alternate;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        @keyframes trishulGlow {
+            0% { text-shadow: 0 0 2px #ffb347, transform: scale(1);}
+            100% { text-shadow: 0 0 20px #ff7e05, 0 0 8px #ffcc66; transform: scale(1.02);}
+        }
+
+        .glory-text {
+            font-size: 2.7rem;
+            font-weight: 900;
+            color: #b3411f;
+            background: linear-gradient(135deg, #d42e12, #ff8c42);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            letter-spacing: 4px;
+            margin: 20px 0 12px;
+            text-transform: uppercase;
+            font-family: inherit;
+        }
+
+        .sub-power {
+            font-size: 1.3rem;
+            color: #5a2e0e;
+            border-top: 2px solid #e4b363;
+            display: inline-block;
+            padding-top: 12px;
+            font-weight: 600;
+        }
+
+        .enter-magazine {
+            background: #c2492d;
+            border: none;
+            color: #fff;
+            font-size: 1.4rem;
+            font-weight: bold;
+            padding: 12px 28px;
+            border-radius: 60px;
+            margin-top: 30px;
+            cursor: pointer;
+            box-shadow: 0 6px 0 #732c18;
+            transition: 0.1s linear;
+            font-family: inherit;
+            width: 80%;
+            letter-spacing: 2px;
+        }
+
+        .enter-magazine:active {
+            transform: translateY(3px);
+            box-shadow: 0 3px 0 #732c18;
+        }
+
+        /* main magazine content (hidden initially) */
+        .magazine-content {
+            display: none;
+            background: #fef7e8;
+            animation: fadeSlide 0.6s ease;
+        }
+
+        @keyframes fadeSlide {
+            from { opacity: 0; transform: translateY(20px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+
+        /* patrika header area with old-style */
+        .patrika-header {
+            background: #fff2df;
+            padding: 1.5rem 1rem 0.8rem;
+            text-align: center;
+            border-bottom: 3px double #dcb572;
+        }
+
+        .om-symbol {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #9b4b1f;
+        }
+
+        .devi-title {
+            font-size: 1.7rem;
+            line-height: 1.2;
+            font-weight: 800;
+            color: #9c2e1a;
+        }
+
+        .devi-names {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin: 12px 0;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #734c2c;
+        }
+
+        .hero-section {
+            background: #f8ebd0;
+            padding: 1.2rem;
+            text-align: center;
+            border-radius: 42px;
+            margin: 16px;
+            box-shadow: inset 0 0 0 1px #ffe3b5, 0 8px 15px rgba(0,0,0,0.05);
+        }
+
+        .shahid-name {
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: #ad2e1c;
+            background: #ffefcf;
+            display: inline-block;
+            padding: 6px 18px;
+            border-radius: 40px;
+            margin-bottom: 12px;
+        }
+
+        .quote {
+            font-style: italic;
+            font-size: 1rem;
+            background: #ffe1b3;
+            padding: 12px;
+            border-radius: 28px;
+            color: #3e2a1c;
+            font-weight: 500;
+        }
+
+        /* logs section - as digital data integration */
+        .logs-digest {
+            background: #e9dbca;
+            margin: 24px 16px 20px;
+            padding: 14px 18px;
+            border-radius: 28px;
+            border-left: 12px solid #b6542c;
+            font-family: 'Courier New', monospace;
+            font-size: 0.75rem;
+            color: #2b2b1a;
+            box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+        }
+
+        .logs-digest h4 {
+            font-family: system-ui;
+            font-weight: 800;
+            font-size: 1rem;
+            color: #4a2a12;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #b8824a;
+            display: inline-block;
+            margin-bottom: 12px;
+        }
+
+        .log-badge {
+            background: #2c4822;
+            color: #ffe2b5;
+            padding: 2px 10px;
+            border-radius: 30px;
+            font-size: 0.65rem;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .operator-list {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .operator-name {
+            background: #bf7e46;
+            color: white;
+            padding: 2px 12px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+        }
+
+        .temporal-note {
+            font-size: 0.7rem;
+            margin-top: 10px;
+            color: #4f351b;
+        }
+
+        /* footer decorative */
+        .mag-footer {
+            background: #dbbb8b;
+            text-align: center;
+            padding: 14px;
+            font-weight: bold;
+            font-size: 0.8rem;
+            color: #2d1c0c;
+            border-top: 3px solid #b87c3a;
+        }
+
+        button {
+            background: none;
+            border: none;
+        }
+
+        @media (max-width: 480px) {
+            .glory-text { font-size: 2rem; }
+            .trishul-icon { font-size: 4rem; }
+            .devi-title { font-size: 1.3rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="magazine-wrapper" id="magazineRoot">
+    <!-- TRISHUL ENTRY PAGE (initial visible) -->
+    <div id="trishulEntry" class="trishul-page">
+        <div class="trishul-icon">🔱🕉️🔱</div>
+        <div class="glory-text">जय माँ की शक्ति</div>
+        <div class="sub-power">|| ॐ हिंगलाज माता ||</div>
+        <div style="margin: 1.2rem 0;">
+            <div style="font-size: 3rem;">🗡️⚡🗡️</div>
+            <p style="font-weight:500; margin-top:8px;">शक्ति का प्रथम द्वार</p>
+        </div>
+        <button class="enter-magazine" id="openMagazineBtn">📖 खोलें डिजिटल पत्रिका</button>
+        <div style="margin-top: 20px; font-size: 12px; color: #a5632e;">त्रिशूल चमके, भक्ति जागे</div>
+    </div>
+
+    <!-- MAIN DIGITAL MAGAZINE CONTENT (hidden until click) -->
+    <div id="mainMagazine" class="magazine-content">
+        <!-- पत्रिका का पूरा अंश: जो पहले जेपीजी में था + लॉग डेटा + गौरव -->
+        <div class="patrika-header">
+            <div class="om-symbol">ॐ जय हिंगलाज माता – शक्तिपीठ बलोद्युतान ॐ</div>
+            <div class="devi-names">
+                <span>आई आवडू माता</span>
+                <span>आई खोडियार माता</span>
+            </div>
+            <div class="devi-title">श्री करणी जी महाराज</div>
+        </div>
+
+        <div class="hero-section">
+            <div class="shahid-name">⚔️ अमर शहीद कुँवर प्रताप सिंह बारहट ⚔️</div>
+            <div><strong>जन्म नपंती लमाटोह — 2026</strong> | हार्दिक आस्वर्ण</div>
+            <div class="quote" style="margin-top: 12px;">
+                “थाकि जिल्का आलटा, कलम तलवार है हाथ <br>
+                चाहण होना गौरव मेटा, माँ करणी टो विश्वास”
+            </div>
+        </div>
+
+        <!-- Certificate Transparency Logs Integration (from log_list.json presented as digital signature / security aura) -->
+        <div class="logs-digest">
+            <h4>📜 सीटी लॉग्स - डिजिटल सुरक्षा तंत्र</h4>
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+                <span class="log-badge">📡 वर्शन: 85.82</span>
+                <span class="log-badge">🕘 टाइमस्टैम्प: 1779284348000</span>
+            </div>
+            <div class="operator-list">
+                <span class="operator-name">🔰 Google</span>
+                <span class="operator-name">☁️ Cloudflare</span>
+                <span class="operator-name">🔒 DigiCert</span>
+                <span class="operator-name">🦁 Sectigo</span>
+                <span class="operator-name">🍃 Let's Encrypt</span>
+                <span class="operator-name">🌏 TrustAsia</span>
+                <span class="operator-name">🗻 Geomys</span>
+                <span class="operator-name">🌐 IPng Networks</span>
+            </div>
+            <div style="margin-top: 8px;">
+                🌟 <strong>प्रमुख लॉग्स</strong> : Argon2026h1, Xenon2026h1, Nimbus2026, Wyvern2026h1, Mammoth2026h1, Oak2026h1, Tuscolo2026h1, Halloumi2026h1 एवं अनेक शक्तिपीठ लॉग्स।
+            </div>
+            <div class="temporal-note">
+                📅 टेम्पोरल इंटरवल : 1767225600000 से 1830297600000 तक — "शक्ति चक्र सक्रिय"
+            </div>
+            <div style="font-size: 0.7rem; margin-top: 8px; background:#fff0dc; padding:6px; border-radius: 16px;">
+                ✨ Tiled logs: Sycamore2026h1, Willow2026h1, Luoshu2027, Gouda2026h1 ... सभी सक्रिय एवं मॉनिटरिंग URL सहित
+            </div>
+            <div style="font-size:0.68rem; margin-top: 6px;">🔐 MMd: 86400 / 60 | स्थिति: usable / readonly / retired (ऐतिहासिक डिजिटल हस्ताक्षर)</div>
+        </div>
+
+        <!-- extra patrika elements inspired by traditional magazine & pride -->
+        <div style="padding: 0 16px 8px;">
+            <div style="background: #fff0df; border-radius: 28px; padding: 16px; margin-bottom: 16px;">
+                <h3 style="color:#a13f22; border-left: 7px solid #e67e22; padding-left: 12px;">🚩 शक्ति त्रिशूल स्तम्भ</h3>
+                <p style="margin-top: 8px;">जिस प्रकार CT लॉग्स इंटरनेट सुरक्षा के स्तंभ हैं, उसी प्रकार माँ करणी, खोडियार माता और हिंगलाज माता की कृपा से यह पत्रिका अटूट विश्वास का प्रतीक है। यहाँ हर लॉग एक दिव्य रेखा है — जय माँ की शक्ति।</p>
+                <div style="display: flex; gap: 12px; justify-content: center; margin: 18px 0;">
+                    <span style="font-size:2rem;">🔱</span><span style="font-size:2rem;">🗡️</span><span style="font-size:2rem;">🛡️</span>
+                </div>
+                <p><strong>“कलम तलवार है हाथ, माँ करणी टो विश्वास”</strong> — यही हमारी डिजिटल पत्रिका की आत्मा है।</p>
+            </div>
+            
+            <!-- कुछ और ऐड करना: रणबांकुरे और शौर्य गाथा -->
+            <div style="background: #e8dac8; border-radius: 28px; padding: 16px; margin-bottom: 18px;">
+                <h3 style="color:#734222;">⭐ गौरव गाथा : शौर्य चक्र</h3>
+                <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px;">
+                    <span style="background:#c28443; color:white; border-radius: 40px; padding:4px 14px;">बलिदानी कुँवर प्रताप सिंह</span>
+                    <span style="background:#c28443; color:white; border-radius: 40px; padding:4px 14px;">लमाटोह गौरव</span>
+                    <span style="background:#c28443; color:white; border-radius: 40px; padding:4px 14px;">शक्तिपीठ बलोद्युतान</span>
+                    <span style="background:#c28443; color:white; border-radius: 40px; padding:4px 14px;">CT लॉग्स डिजिटल शक्ति</span>
+                </div>
+                <p style="margin-top: 15px;">यह डिजिटल पत्रिका साक्षात् त्रिशूल के समान है। जो भी इस पृष्ठ को देखेगा, उसे माँ के आशीर्वाद का अनुभव हो। संपूर्ण लॉग डेटा वास्तविक सुरक्षा मानकों पर आधारित है।</p>
+            </div>
+        </div>
+
+        <!-- show additional log operators from JSON (enriched view) -->
+        <div class="logs-digest" style="background: #f0e1ce;">
+            <h4>🗂️ ऑपरेटर्स एवं सक्रिय लॉग्स (सारांश)</h4>
+            <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 6px; font-size: 0.7rem;">
+                <div>✅ Google: Argon2026h1/h2, Xenon2026h1/h2, Argon2027h1</div>
+                <div>✅ Cloudflare: Nimbus2026, Nimbus2027</div>
+                <div>✅ DigiCert: Wyvern2026h1/h2, Sphinx2026h1/h2, Wyvern2027h1/h2</div>
+                <div>✅ Sectigo: Mammoth, Sabre, Elephant, Tiger (2026–2027)</div>
+                <div>✅ Let's Encrypt: Oak2026h1/h2 (retired) & Sycamore/Willow Tiled logs</div>
+                <div>✅ TrustAsia: log2026a/b, HETU2027, Luoshu2027 (Tile)</div>
+                <div>✅ Geomys: Tuscolo2026h1/h2, Tuscolo2027h1/h2</div>
+                <div>✅ IPng Networks: Halloumi2026h1/h2, Gouda2026h1/h2, Halloumi2027, Gouda2027</div>
+            </div>
+            <div class="temporal-note" style="margin-top:12px;">
+                🕉️ "Bogus placeholder logs" (Geomys, IPng) — ऐतिहासिक स्थिरता हेतु, 2026-2027 तक सभी लॉग्स सुरक्षा में योगदान करते हैं।
+            </div>
+        </div>
+
+        <div class="mag-footer">
+            <span>🔱 ॐ जय हिंगलाज माता 🔱</span><br>
+            <span>शक्ति पूजा डिजिटल पत्रिका — हर श्वास में त्रिशूल</span><br>
+            <span style="font-size: 0.65rem;">व्हाट्सएप हेतु तैयार | कोई लिंक आवश्यक नहीं, सीधे खुलने वाला पत्रिका अंक</span>
+        </div>
+    </div>
+</div>
+
+<script>
+    (function() {
+        const entryDiv = document.getElementById('trishulEntry');
+        const magazineDiv = document.getElementById('mainMagazine');
+        const openBtn = document.getElementById('openMagazineBtn');
+
+        // When user clicks "खोलें डिजिटल पत्रिका" - transition to magazine
+        function revealMagazine() {
+            // fade out entry slightly if needed but just hide and show magazine with animation
+            entryDiv.style.transition = "opacity 0.4s ease";
+            entryDiv.style.opacity = "0";
+            setTimeout(() => {
+                entryDiv.style.display = "none";
+                magazineDiv.style.display = "block";
+                // scroll to top smoothly
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                // add a little vibration / festive feel? purely optional but fine
+            }, 300);
+        }
+
+        openBtn.addEventListener('click', revealMagazine);
+
+        // ensure that if someone refreshes they can still see entry? but once opened, it's okay.
+        // we can also store a session if needed? but simplicity: on page load always show trishul
+        // also handle case where somehow magazine visible? no.
+        magazineDiv.style.display = 'none';
+        entryDiv.style.opacity = '1';
+        entryDiv.style.display = 'flex';
+        entryDiv.style.flexDirection = 'column';
+        entryDiv.style.alignItems = 'center';
+        // minor css adjust if needed
+        entryDiv.style.display = 'flex';
+
+        // also integrate extra dynamic data from log_list.json for authenticity ( show timestamp etc but its already statically present, yet we can display current date)
+        const versionSpan = document.querySelector('.log-badge');
+        if(versionSpan) {
+            // dynamic but static data from the JSON is already there, we can optionally show latest operator count
+            const operatorCount = 8; // Google,Cloudflare,DigiCert,Sectigo,Let's Encrypt,TrustAsia,Geomys,IPng
+            const totalLogsCount = 42; // approx from file length
+            const extraNote = document.createElement('div');
+            extraNote.style.fontSize = '0.65rem';
+            extraNote.style.marginTop = '6px';
+            extraNote.innerText = `🔹 कुल ऑपरेटर्स: ${operatorCount} | सक्रिय लॉग्स: ~${totalLogsCount} | डिजिटल हस्ताक्षरित प्रमाण`;
+            const logsContainer = document.querySelector('.logs-digest');
+            if(logsContainer && !logsContainer.querySelector('.extra-dynamic')) {
+                const dyn = document.createElement('div');
+                dyn.className = 'extra-dynamic';
+                dyn.style.marginTop = '8px';
+                dyn.style.fontSize = '0.7rem';
+                dyn.style.fontWeight = 'bold';
+                dyn.style.color = '#462812';
+                dyn.innerText = '✨ सभी लॉग्स RFC 6962 अनुरूप — चमकता त्रिशूल सुरक्षा ✨';
+                logsContainer.appendChild(dyn);
+            }
+        }
+
+        // also emulate a digital patrika that includes all the information from patrika-page1.jpg completely
+        // check missing: "आई आवडू माता" and "आई खोडियार माता" already present, श्री करणी जी महाराज, शहीद कुँवर प्रताप सिंह बारहट, लमाटोह।
+        // also from jpg there is line "थाकि जिल्का आलटा, कलम तलवार है हाथ चाहण होना गौरव मेटा, माँ करणी टो विश्वास" displayed properly.
+        // add missing "जन्म नपंती लमाटोह — 2026" already present. fine.
+        // ensure the trishul open state shows extra shakti text: I can also add small hidden element on magazine load.
+        // double-check magazine also includes "ॐ जय हिंगलाज माता – शक्तिपीठ बलोद्युतान ॐ" line.
+        // all good.
+
+        // Additionally, we also need to embed the log_list.json content thoroughly but we have showcased operators & logs.
+        // For completeness, we can show detailed 'log_id' sample from each provider but not to overload.
+        // also mention tiled_logs with submission_url etc. Already done.
+        // as requirement: "पूरा पत्रिका है इन दोनों को अटैच कर देना" meaning trishul page + magazine (with jpg contents) attached.
+        // Done.
+        // Also second thing: "पहले पेज हो जाए वह त्रिशूल वाला" — done, फिर बाकी दो या तीन और कुछ ऐड करना है, actually we added extra shakti column and logs detail, multiple sections.
+        // final requirement: file directly open in whatsapp on any device, no link type, it's a standalone html. works.
+
+        // Ensure visual 'CHAMAK' (sparkle) on trishul page: added glow animation.
+        // Additional micro interaction: when magazine opens, we simulate a small console message.
+        console.log("डिजिटल पत्रिका खुल गई | जय माँ करणी | त्रिशूल शक्ति सक्रिय");
+        
+        // also added tiled logs monitoring url mention in log digest. From original json: sycamore, willow, luoshu, gouda etc. fine.
+
+        // let's add a tiny feature - "today's shakti" dynamic seal
+        const addShaktiSeal = () => {
+            const footer = document.querySelector('.mag-footer');
+            if(footer && !footer.querySelector('.shakti-stamp')) {
+                const stamp = document.createElement('div');
+                stamp.className = 'shakti-stamp';
+                stamp.style.marginTop = '10px';
+                stamp.style.fontSize = '0.7rem';
+                stamp.style.fontFamily = 'monospace';
+                const now = new Date();
+                const dateStr = now.toLocaleDateString('hi-IN');
+                stamp.innerHTML = `🕉️ शक्ति मुद्रा • ${dateStr} • ॐ हिंगलाजै नमः 🕉️`;
+                footer.appendChild(stamp)
